@@ -1,0 +1,226 @@
+/*! purgecss start ignore */
+
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 140px;
+    @apply fixed overflow-hidden bg-white;
+    box-shadow: 0px 0px 6px 6px #00000038;
+}
+
+.bottom-bar {
+    background-image: linear-gradient(to right, #6A4B27, #DAAE62, #BC9B59, #755135);
+    height: 3px;
+}
+
+main {
+    margin-top: 140px;
+}
+
+.page-title {
+    @apply text-white font-nexa-regular font-bold;
+    font-size: 50px;
+}
+
+.page-desc {
+    @apply text-white font-nexa-thin;
+    font-size: 50px;
+}
+
+.title {
+    @apply text-primary font-nexa-light;
+    font-size: 34px;
+}
+
+.title1 {
+    @apply text-primary font-nexa-light;
+    font-size: 42px;
+}
+
+.heading {
+    @apply text-black font-nexa-regular leading-relaxed;
+    font-size: 22px;
+}
+
+.heading1 {
+    @apply text-primary font-nexa-regular;
+    font-size: 24px;
+}
+
+.heading2 {
+    @apply text-white font-nexa-thin;
+    font-size: 24px;
+}
+
+.heading3 {
+    @apply text-black font-caveat-regular;
+    font-size: 18px;
+}
+
+.heading4 {
+    @apply text-black font-nexa-regular;
+    font-size: 18px;
+}
+
+.content {
+    @apply text-black font-nexa-regular leading-loose;
+    font-size: 16px;
+}
+
+.content1 {
+    @apply text-primary font-caveat-regular;
+    font-size: 25px;
+}
+
+.content2 {
+    @apply text-black font-caveat-regular;
+    font-size: 25px;
+}
+
+.nav-item {
+    @apply font-nexa-regular no-underline;
+    font-size: 15px;
+}
+
+.nav-item-bottom {
+    @apply font-nexa-regular;
+    font-size: 13px;
+}
+
+.link {
+    @apply text-primary font-nexa-regular;
+    font-size: 13px;
+}
+
+.link::after {
+    content: url(../images/right-arrow-small.svg);
+    padding-left: 35px;
+    padding-top: 3px;
+}
+
+.button-primary {
+    @apply my-auto px-3 py-4 text-center bg-primary border border-primary font-nexa-regular text-second uppercase;
+    font-size: 14px;
+    width: 192px;
+    height: 54px;
+}
+
+.top-booking-button {
+    @apply my-auto px-3 py-4 text-center bg-primary border border-primary font-nexa-regular text-second uppercase;
+    font-size: 14px;
+    width: 192px;
+    height: 54px;
+}
+
+.button-second {
+    @apply my-auto py-4 px-3 bg-primary border border-white font-nexa-regular text-second uppercase;
+    font-size: 14px;
+    width: 192px;
+    height: 54px;
+}
+
+.phone-number {
+    @apply text-black font-nexa-regular;
+    font-size: 22px;
+}
+
+.form-input {
+    @apply appearance-none block w-full bg-white border-primary rounded-none border text-second py-4 px-4 font-nexa-regular;
+    font-size: 14px;
+}
+
+.form-input::placeholder {
+    @apply text-second
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked~.control-1, #carousel-2:checked~.control-2, #carousel-3:checked~.control-3 {
+    /* display: block; */
+    display: flex;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet, #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet, #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2b6cb0;
+    /*Set to match the Tailwind colour you want the active one to be */
+}
+
+.s-area {
+    margin-top: 3.5rem;
+}
+
+@media (max-width: 1279px) {
+    .page-title {
+        font-size: 26px;
+    }
+    .page-desc {
+        font-size: 14px;
+    }
+    header {
+        height: auto;
+    }
+    main {
+        margin-top: 70px;
+    }
+    .s-area {
+        margin-top: 1.5rem;
+    }
+    nav {
+        margin-top: 5px;
+    }
+    /* .title{
+        font-size: 28px;
+    } */
+}
+
+@media (max-width: 1279px) {
+    .top-booking-button {
+        /* font-size: 10px;
+        width: 192px;
+        height: 54px; */
+    }
+}

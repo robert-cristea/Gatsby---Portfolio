@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'NexaThin';
+    src: url(./Nexa-Thin.otf);
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url(./Nexa-Light.otf);
+}
+
+@font-face {
+    font-family: 'NexaRegular';
+    src: url(./Nexa-Regular.otf)
+}
+
+@font-face {
+    font-family: 'NexaXBold';
+    src: url(./Nexa-XBold.otf)
+}
+
+@font-face {
+    font-family: 'CaveatBold';
+    src: url(./Caveat-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'CaveatRegular';
+    src: url(./Caveat-Regular.ttf)
+}

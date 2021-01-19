@@ -1,0 +1,26 @@
+const images = {
+    IC_APP: require("../images/logo.png"),
+    IC_APP_BOTTOM: require("../images/logo_bottom.png"),
+    IC_FB: require("../images/ic_fb.png"), 
+    IC_INS: require("../images/ic_in.png"), 
+    IMG_LEFT_ARROW: require("../images/left_arrow.png"), 
+    IMG_RIGHT_ARROW: require("../images/right_arrow.png"), 
+    IMG_FIVE_STARS: require("../images/five_stars.png"), 
+    IMG_SERVICES: require('../images/img_services.jpg'),
+    IMG_PARTNER1: require('../images/img_pt1.png'),
+    IMG_PARTNER2: require('../images/img_pt2.png'),
+    IMG_PARTNER3: require('../images/img_pt3.png'),
+    IMG_PARTNER4: require('../images/img_pt4.png'),
+    IMG_PARTNER5: require('../images/img_pt5.png'),
+    IMG_PHOTO: require('../images/img_photo1.jpg'),
+    IMG_PHOTO2: require('../images/img_photo2.jpg'),
+    IMG_EYE1: require('../images/img_eye1.png'),
+    IMG_EYE2: require('../images/img_eye2.png'),
+    IMG_EYE3: require('../images/img_eye3.png'),
+    IMG_BG_HOME: require("../images/bg_home.jpg"),
+    IMG_BG_SERVICES: require("../images/bg_service.jpg"),
+    IMG_BG_LOC: require("../images/bg_loc.jpg"),
+    IMG_BG_ABOUT: require("../images/bg_about.jpg"),
+};
+
+export default images;

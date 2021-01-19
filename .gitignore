@@ -1,0 +1,18 @@
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+node_modules
+!node_modules/react-photo-gallery
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build directory
+/public
+
+
+# macOS
+.DS_Store
+
+# deployment-specific configs
+now.json
